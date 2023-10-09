@@ -31,6 +31,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    background-image: url(/surface-du-mur-beton-orange-grossier.jpg);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 ol, ul {
 	list-style: none;
@@ -52,33 +56,24 @@ table {
 * {
     scroll-behavior: smooth;
 }
-header, main, footer{
-    border-style: solid;
-    border-width: 2px;
-    color: cadetblue;
-    padding: 5px;
-}
-
-div#container{
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: 1fr 6fr 1fr;
-}
 
 header > nav{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     height: 100%;
     align-items: center;
+    font-family: monospace;
+    font-size: larger;
 }
 
-header > nav > ul.example{
+header > nav > ul.list{
     flex-grow: 1;
     display: flex;
+    margin-top: 50px;
     justify-content: space-around;
 }
 
-header > nav >i.fa-bars{
+/*header > nav >i.fa-bars{
     display: none;
 }
 
@@ -106,14 +101,31 @@ header > nav >i.fa-bars{
 
 }
 
-section{
-    height: 400px;
-    padding-top: 8vh;
+main{
+    display: flex;
 }
 
-header{
-    position:fixed;
-    width: 100%;
-    height: 5vh;
-    background-color:white;    
+.bio{
+    color: aliceblue;
+    font-family: monospace;
+    display: inline-flex;
+    align-items: center;
+    margin: 100px;
+    max-width: 60%;
+}
+
+img.profile{
+    border-radius: 50%;
+    width: 200px;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    border-bottom: 3px;
+    border-color: white;
 }
