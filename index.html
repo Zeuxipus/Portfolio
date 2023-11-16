@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Orlane Coulon</title>
-    <script>
-        function openMenu() {
-            let nav=document.querySelector("nav")
-            nav.classList.toggle("open")
-        }
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./main.js"defer></script>
 </head>
-
 <body>
-<div id="container">
-    <!-- le header qui contient notre entête de site (logo, nav etc) -->
-    <header>
-    <nav>
-        <ul class="list">
+    <div class="container">
+        <div class="header">
+        <div class="logo"><a href="#">Portfolio</a></div>
+            <ul>
+            <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="./Projects.html">Projects</a></li>
-            <li><a href="./Resume.html">Resume</a></li>
-            <li><a href="./Contact.html">Contact</a></li>
-        </ul>
-        </nav>
-    </header>
-    <!-- contenu principal changeant à chaque page -->
-    <main>
-        <div class="bio"><p>Je uis une personne en reconverion dans le développement web.
-            Après un début de carrière dans le commerce, j'ai décidé de changer de voie et d'apprendre de nouvelles compétences.
-        </p>
-        <img class="profile" src="/photo_de_profil_cartoon-removebg-preview.png" alt="photo_de_profil">
-        </div>
-    </main>
-    <!-- notre pied de page -->
-    <footer>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+            <i class="fa fa-bars" id="menu-icon"></i>
+         </div>
 
-    </footer>
-</div>
+        
+            <div class="hero">
+                <h4>Heyy ! </h4>
+                <h1>Je suis <span id="text">Orlane</span></h1>
+                <div class="text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore veritatis, commodi aperiam incidunt, et illum iusto, aut ullam odit voluptates autem praesentium quo sapiente quidem ea error? Deleniti rerum ipsam corporis atque ea sapiente incidunt labore consequatur consequuntur architecto voluptate in, itaque autem obcaecati totam laboriosam. Nam libero alias saepe!</p>
+                <img src="./img/photo_de_profil_cartoon-removebg-preview.png" alt="photo_de_profil">
+            </div>
+                <div class="social">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <button>Télécharger mon CV</button>
+            </div>
+           
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>:
 </body>
 </html>
