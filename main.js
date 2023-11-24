@@ -1,6 +1,11 @@
-let menu = document.querySelector(".header ul")
-let bars = document.querySelector(".header .fa-bars")
+const links = document.querySelectorAll("nav li");
 
-bars.addEventListener("click",function(){
-    menu.classList.toggle("show");
-})
+icons.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+});

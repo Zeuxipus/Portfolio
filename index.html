@@ -17,21 +17,23 @@
   <body>
     <div class="container">
       <div class="header">
-        <div class="logo"><a href="#">Portfolio</a></div>
+        <nav id="nav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <i class="fa fa-bars" id="menu-icon"></i>
+        <!-- <i class="fa fa-bars" id="menu-icon"></i> -->
+        <div id="icons"></div>
+      </nav>
       </div>
 
       <div class="hero">
-        <h4>Heyy !</h4>
-        <h1>Je suis <span id="text">Orlane</span></h1>
+        <h4 id="home">Heyy !</h4>
+        <h2>Je suis <span id="text">Orlane</span></h2>
         <div class="text">
-          <p id="home">
+          <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
             veritatis, commodi aperiam incidunt, et illum iusto, aut ullam odit
             voluptates autem praesentium quo sapiente quidem ea error? Deleniti
@@ -46,12 +48,16 @@
         </div>
         <div class="social">
           <div class="icon">
-            <i class="fa-brands fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/in/orlane-coulon-ba5682276/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+            <div class="icon">
+            <a href="https://github.com/Zeuxipus/Orlane-Coulon/blob/main/README.md" target="_blank"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
         <button>Télécharger mon CV</button>
       </div>
     <div class="hero">
+      <h2>A propos de <span id="text">moi</span></h2>
     <section id="about">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem
       dolorem libero illum ullam excepturi voluptatum, tenetur molestias magnam
@@ -73,36 +79,44 @@
     </section>
 
     <section id="portfolio">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci at
-      aliquid animi. Necessitatibus blanditiis eligendi asperiores, distinctio
-      temporibus provident quos dolore unde porro soluta dignissimos quo
-      corrupti eos. Culpa accusantium voluptates, libero provident voluptas
-      tempore repudiandae similique in reprehenderit mollitia quod perferendis
-      atque? Illum modi et odit beatae dicta. Voluptatum consequuntur corrupti
-      itaque ullam? Rem nihil numquam cum ut aliquid dolor ea molestiae eaque
-      accusamus! Incidunt id, quod minima ducimus totam molestias rem dicta
-      dolores dolorem, enim dolore saepe facilis nobis in et magni ut asperiores
-      reprehenderit eos exercitationem velit soluta rerum culpa. Dolor ullam
-      accusamus molestiae facere laboriosam eveniet natus impedit voluptatum,
-      corrupti sequi modi asperiores dolorum, minima iure omnis molestias amet
-      in deserunt culpa quam dolores id atque! Sit culpa nemo, corrupti itaque
-      consectetur velit dignissimos iure maxime ad. Sit veritatis adipisci
-      sapiente maxime modi! Ad odio nulla quo deserunt soluta sint aperiam qui,
-      harum neque cum accusamus.
+      <h2>Mes <span id="text">projets</span></h2>
+      <article class="card">
+        <div class="card_thumb">
+          <img id="imgCard" src="./img/Capture d'écran imageSearchApp.png" alt="imageSearchApp">
+        </div>
+        <div class="card_body">
+          <div class="card_title"><a href="https://github.com/Zeuxipus/Projets_Javascript/tree/main/Image_Search_App">Application de recherche d'images</a></div>
+          <div class="card_subtitle">Javascript</div>
+          <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illo molestiae asperiores neque ut maxime totam placeat quibusdam eos laudantium.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card_thumb">
+          <img id="imgCard" src="./img/Capture d'écran memeGenerator.png" alt="imageSearchApp">
+        </div>
+        <div class="card_body">
+          <div class="card_title"><a href="https://github.com/Zeuxipus/Projets_Javascript/tree/main/Meme_Generator">Générateur de memes</a></div>
+          <div class="card_subtitle">Javascript</div>
+          <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illo molestiae asperiores neque ut maxime totam placeat quibusdam eos laudantium.</p>
+        </div>
+      </article>
     </section>
 
     <section id="contact">
+      <h2>Me <span id="text">contacter</span></h2>
       <form>
+        <div class="hero">
         <label for="name">Name:</label><br />
         <input type="text" name="Name" id="Name" />
         <label for="email">Email:</label><br />
         <input type="email" name="mail" id="mail" />
         <input type="button" value="Envoyer">
       </form>
+    </div>
     </section>
 </div>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
-    :
   </body>
 </html>
