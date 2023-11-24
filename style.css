@@ -176,7 +176,7 @@ nav {
     display: block;
     margin: 18px 0;
     padding-left: 12%;
-    
+
   }
    #icons {
     display: block;
@@ -195,6 +195,7 @@ nav {
     width: 100%;
     text-align: center;
     transition: 0.25s;
+    background: rgba(255, 255, 255, 0.8);
   }
   nav li {
     padding: 3px 0;
